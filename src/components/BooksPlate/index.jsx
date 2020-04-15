@@ -18,7 +18,7 @@ const BooksPlate = ({books, isReady}) => {
                                 </Card.Meta>
                             </Card.Content>
                             <Card.Content extra>
-                                <a href="">
+                                <a href="#">
                                     <Icon name='dollar'/>
                                     {price}
                                 </a>

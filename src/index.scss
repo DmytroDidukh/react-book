@@ -12,12 +12,28 @@ code {
   monospace;
 }
 
-.ui.menu {
+.ui.menu:first-child {
   box-shadow: 0 1px 3px 0 #0b0bb9, 0 0 0 1px #f5007c !important;
   margin-top: 30px !important;
+  margin-bottom: 0;
 
   > .item:first-child {
     font-family: 'Kalam', cursive;
+  }
+}
+
+.ui.menu.secondary {
+  box-shadow: 0 5px 10px 0 #f7f7f7c9;
+  border-radius: 10px;
+  margin: 0;
+  padding: 5px;
+
+  * {
+    text-transform: lowercase;
+  }
+
+  > div.item {
+    margin-left: auto;
   }
 }
 
