@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": 0,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/220px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+      "price": 25,
+      "rating": 5
+    },
+    {
+      "id": 1,
+      "title": "Martin Eden",
+      "author": "Jack London",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/MartinEden.jpg/220px-MartinEden.jpg",
+      "price": 30,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/1984first.jpg/220px-1984first.jpg",
+      "price": 27,
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/LordOfTheFliesBookCover.jpg/220px-LordOfTheFliesBookCover.jpg",
+      "price": 19,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "title": "The Catcher in the Rye",
+      "author": "J. D. Salinger",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg/220px-The_Catcher_in_the_Rye_%281951%2C_first_edition_cover%29.jpg",
+      "price": 35,
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tolstoy_-_War_and_Peace_-_first_edition%2C_1869.jpg/220px-Tolstoy_-_War_and_Peace_-_first_edition%2C_1869.jpg",
+      "price": 37,
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "title": "Gone with the Wind",
+      "author": "Margaret Mitchell",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Gone_with_the_Wind_cover.jpg/220px-Gone_with_the_Wind_cover.jpg",
+      "price": 39,
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/TheAlchemist.jpg",
+      "price": 15,
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "title": "One Flew Over the Cuckoo's Nest",
+      "author": "Ken Kesey",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/OneFlewOverTheCuckoosNest.jpg/220px-OneFlewOverTheCuckoosNest.jpg",
+      "price": 18,
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "title": "Flowers for Algernon",
+      "author": "Daniel Keyes",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/FlowersForAlgernon.jpg/220px-FlowersForAlgernon.jpg",
+      "price": 16,
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/AnnaKareninaTitle.jpg/220px-AnnaKareninaTitle.jpg",
+      "price": 25,
+      "rating": 3
+    }
+  ]
+}

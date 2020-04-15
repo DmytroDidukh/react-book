@@ -9,4 +9,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.ui.menu {
+  box-shadow: 0 1px 3px 0 #0b0bb9, 0 0 0 1px #f5007c !important;
+  margin-top: 30px !important;
+}
+.ui.menu > .item:first-child {
+  font-family: "Kalam", cursive;
+}
+
+.cards {
+  padding: 50px !important;
+}
+.cards .ui.card img {
+  height: 250px !important;
+}
+.cards .ui.card .header {
+  font-size: 1.1em !important;
+}
+.cards .ui.card .meta {
+  font-size: 0.9em !important;
+}
+.cards .ui.card .ui.rating {
+  text-align: center;
+  display: block;
+  margin: 5px;
+}
+.cards .ui.card .ui.rating * {
+  color: darkred;
+}
+
+@media screen and (max-width: 1200px) {
+  .ui.five.cards > .card {
+    width: calc(25% - 1.5em);
+  }
+  .ui.five.cards > .card img {
+    height: 260px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ui.five.cards > .card {
+    width: calc(33% - 1.5em);
+  }
+  .ui.five.cards > .card img {
+    height: 260px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ui.five.cards > .card {
+    width: calc(33% - 1.5em);
+  }
+  .ui.five.cards > .card img {
+    height: 260px !important;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

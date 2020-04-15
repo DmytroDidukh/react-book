@@ -1,12 +1,39 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {connect} from 'react-redux';
+import axios from 'axios'
+import {Container} from 'semantic-ui-react'
 
 
-function App() {
-  return (
-    <div className="container">
+import {Menu, BooksPlate} from './components'
+import {setBooks} from './actions/books'
 
-    </div>
-  );
+import 'semantic-ui-css/semantic.min.css'
+
+
+function App({books, setNewBooks, isReady}) {
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/books').then(({data}) => {
+            setNewBooks(data)
+        })
+    }, []);
+
+
+    return (
+        <Container>
+            <Menu/>
+            <BooksPlate books={books} isReady={isReady}/>
+        </Container>
+    );
 }
 
-export default App;
+const mapStateToProps = ({books: {items, isReady}}) => {
+
+    return {books: items, isReady: isReady}
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {setNewBooks: books => dispatch(setBooks(books))}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
