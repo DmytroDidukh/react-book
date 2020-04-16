@@ -9,6 +9,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.ui.menu {
+  position: relative;
+}
+
 .ui.menu:first-child {
   box-shadow: 0 1px 3px 0 #0b0bb9, 0 0 0 1px #f5007c !important;
   margin-top: 30px !important;
@@ -16,6 +20,45 @@ code {
 }
 .ui.menu:first-child > .item:first-child {
   font-family: "Kalam", cursive;
+}
+
+.ui.items.cart-popup {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  z-index: 10;
+  background: white;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 0 10px 10px;
+}
+.ui.items.cart-popup > .item {
+  padding: 0 10px 10px 0;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+  position: relative;
+}
+.ui.items.cart-popup > .item .image img {
+  height: 100px;
+}
+.ui.items.cart-popup > .item .content i.trash {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.3;
+}
+.ui.items.cart-popup > .item .content i.trash:hover {
+  opacity: 0.8;
+  color: #db2828;
+}
+.ui.items.cart-popup .remove.circle.icon {
+  position: absolute;
+  right: -12px;
+  top: -10px;
+  z-index: 20;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .ui.menu.secondary {
@@ -56,7 +99,7 @@ code {
 }
 .cards .ui.card .ui.button {
   color: white;
-  background: #D32128;
+  background: #db2828;
   transition: all 0.1s ease-in-out;
 }
 .cards .ui.card .ui.button:hover {

@@ -8,36 +8,26 @@ const initialState = {
             "price": 25,
             "rating": 5
         },
-        {
-            "id": 1,
-            "title": "Martin Eden",
-            "author": "Jack London",
-            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/MartinEden.jpg/220px-MartinEden.jpg",
-            "price": 30,
-            "rating": 5
-        },
-        {
-            "id": 2,
-            "title": "1984",
-            "author": "George Orwell",
-            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/1984first.jpg/220px-1984first.jpg",
-            "price": 27,
-            "rating": 5
-        },
-    ]
+    ],
+    isHidden: false,
 };
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case 'ADD_BOOK':
+        case 'ADD_TO_BOOK':
             return {
                 ...state,
                 items: [...state.items, action.payload]
             };
-        case 'REMOVE_BOOK':
+        case 'REMOVE_FROM_CART':
             return {
                 ...state,
-                items: state.items.filter(book => book.id !== action.payload)
+                items: state.items.filter(book => book.id !== action.payload),
+            };
+        case 'SHOW_HIDE_CART':
+            return {
+                ...state,
+                isHidden: !action.payload
             };
         default:
             return state;

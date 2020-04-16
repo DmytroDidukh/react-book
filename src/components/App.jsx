@@ -3,12 +3,14 @@ import axios from 'axios'
 import {Container} from 'semantic-ui-react'
 
 import SortPanel from '../containers/Sort'
-import {Menu, BooksPlate} from './index'
+import HeaderMenu from '../containers/Menu'
+import { BooksPlate} from './index'
 
 import 'semantic-ui-css/semantic.min.css'
 
 
-function App({books, setBooks, isReady}) {
+function App({books, setBooks, isReady, addToCart}) {
+    console.log(addToCart)
 
     useEffect(() => {
         axios.get('http://localhost:3001/books').then(({data}) => {
@@ -19,9 +21,13 @@ function App({books, setBooks, isReady}) {
 
     return (
         <Container>
-            <Menu/>
+            <HeaderMenu/>
             <SortPanel/>
-            <BooksPlate books={books} isReady={isReady}/>
+            <BooksPlate
+                books={books}
+                isReady={isReady}
+                addToCart={addToCart}
+            />
         </Container>
     );
 }

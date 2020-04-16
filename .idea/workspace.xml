@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5847d3-e321-4d76-99dd-e652fae61036" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/Cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cart/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BooksPlate/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BooksPlate/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SortPanel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPanel/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/books.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="D:/Studing/EPAM" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,7 +102,11 @@
       <workItem from="1586896738969" duration="7641000" />
       <workItem from="1586938773147" duration="25252000" />
       <workItem from="1586975964765" duration="16524000" />
-      <workItem from="1587023225435" duration="8597000" />
+      <workItem from="1587023225435" duration="17445000" />
+      <workItem from="1587052643823" duration="19000" />
+      <workItem from="1587067849583" duration="2000" />
+      <workItem from="1587068117377" duration="422000" />
+      <workItem from="1587071005552" duration="3125000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1586858780729</created>
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586992448611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sort">
+      <created>1587033690823</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587033690823</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
