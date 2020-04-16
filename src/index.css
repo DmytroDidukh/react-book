@@ -40,7 +40,10 @@ code {
 .cards .ui.card .header {
   font-size: 1.1em !important;
 }
-.cards .ui.card .meta {
+.cards .ui.card .content {
+  padding-bottom: 0;
+}
+.cards .ui.card .content .meta {
   font-size: 0.9em !important;
 }
 .cards .ui.card .ui.rating {
@@ -50,6 +53,15 @@ code {
 }
 .cards .ui.card .ui.rating * {
   color: darkred;
+}
+.cards .ui.card .ui.button {
+  color: white;
+  background: #D32128;
+  transition: all 0.1s ease-in-out;
+}
+.cards .ui.card .ui.button:hover {
+  color: #fff;
+  background: #f2711c;
 }
 
 @media screen and (max-width: 1200px) {

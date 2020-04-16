@@ -51,8 +51,11 @@ code {
       font-size: 1.1em !important;
     }
 
-    .meta {
-      font-size: .9em !important;
+    .content {
+      padding-bottom: 0;
+      .meta {
+        font-size: .9em !important;
+      }
     }
 
     .ui.rating {
@@ -64,8 +67,20 @@ code {
         color: darkred;
       }
     }
+
+    .ui.button {
+      color: white;
+      background: #D32128;
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background: #f2711c;
+      }
+    }
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   .ui.five.cards > .card {

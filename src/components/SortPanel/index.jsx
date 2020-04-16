@@ -1,7 +1,8 @@
 import React from "react";
 import {Input, Menu} from 'semantic-ui-react'
 
-const SortPanel = ({sortBy, sort}) => {
+const SortPanel = ({sort, sortBy, searchQuery}) => {
+
 
     return (
         <Menu secondary>
@@ -32,7 +33,7 @@ const SortPanel = ({sortBy, sort}) => {
             />
             <Menu.Item>
                 <Input icon='search' placeholder='Search...'
-                       onChange={(e) => sort(e.target.value)}
+                       onChange={(e) => searchQuery(e.target.value)}
                 />
             </Menu.Item>
 
