@@ -1,13 +1,15 @@
 import React, {useState} from "react";
-import {Item, Icon, Message, Confirm} from 'semantic-ui-react';
+import {Switch, Route, Link} from "react-router-dom";
+import {Item, Icon, Message, Button, Confirm} from 'semantic-ui-react';
 import {InputNumber} from 'antd';
+
 
 import 'antd/dist/antd.css';
 import './style.scss'
 
 
 const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, changeTotalPrice}) => {
-    const [isShowConfirm, setShowConfirm] = useState(false);
+    //const [isShowConfirm, setShowConfirm] = useState(false);
 
 
     function onChange(value, book) {
@@ -15,18 +17,32 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
         changeTotalPrice(book)
     }
 
-    function showDeleteConfirm() {
+    function showDeleteConfirm(book) {
+        if (window.confirm(`Delete ${book.title}?`)) {
+            removeFromCart(book);
+        }
+    }
+
+    /* Bug with loosing current book
+    function onChange(value, book) {
+        book.count = value;
+        changeTotalPrice(book)
+    }
+
+    function showDeleteConfirm(book) {
+          removeFromCart(book);
         setShowConfirm(true)
     }
 
-    function deleteConfirm(book) {
-        removeFromCart(book);
-        setShowConfirm(false)
-    }
+      function confirmedDelete(book) {
+           removeFromCart(book);
+           setShowConfirm(false)
+       }
 
-    function deleteCancel() {
-        setShowConfirm(false)
-    }
+       function canceledDelete() {
+           setShowConfirm(false)
+       }*/
+
 
     return (
         <Item.Group className={'cart-popup'}>
@@ -45,24 +61,30 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
                                         <Icon name='dollar'/>{book.price}
                                     </Item.Extra>
                                     <Icon name='trash alternate outline'
+                                          onClick={() => showDeleteConfirm(book)}/>
+                                    {/*<Icon name='trash alternate outline'
                                           onClick={showDeleteConfirm}/>
-                                    <Confirm id={"confirm"}
+                                     <Confirm id={"confirm"}
                                              open={isShowConfirm}
-                                             onCancel={deleteCancel}
-                                             onConfirm={() => deleteConfirm(book)}
-                                    />
+                                             header={book.title}
+                                             onCancel={canceledDelete}
+                                             onConfirm={() => confirmedDelete(book)}
+                                    />*/}
                                 </Item.Content>
                                 <InputNumber min={1} max={10} defaultValue={book.count}
                                              onChange={(v) => onChange(v, book)}/>
                             </Item>
-
                         ))
                     ) : (
                         <Message negative>
                             <Message.Header>Cart is empty</Message.Header>
                         </Message>)
             }
-
+            {booksInCart.length ?
+                <Link to={"/checkout"}>
+                    <Button id={"checkout"} basic color='green'>checkout</Button>
+                </Link>
+                : ''}
         </Item.Group>
     )
 };

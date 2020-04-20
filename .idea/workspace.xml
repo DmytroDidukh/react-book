@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5847d3-e321-4d76-99dd-e652fae61036" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/BookCard/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BookCard/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Modal/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Modal/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/BookCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Checkout/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/ConfirmModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/books.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BooksPlate/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookCard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookCard/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +110,7 @@
       <workItem from="1587068117377" duration="422000" />
       <workItem from="1587071005552" duration="3410000" />
       <workItem from="1587281276510" duration="21902000" />
-      <workItem from="1587372693766" duration="14111000" />
+      <workItem from="1587372693766" duration="28688000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1586858780729</created>
@@ -161,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587074910364</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="books description, remove books, modals">
+      <created>1587389640029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587389640029</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +195,7 @@
     <MESSAGE value="features" />
     <MESSAGE value="sort" />
     <MESSAGE value="cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart" />
+    <MESSAGE value="books description, remove books, modals" />
+    <option name="LAST_COMMIT_MESSAGE" value="books description, remove books, modals" />
   </component>
 </project>

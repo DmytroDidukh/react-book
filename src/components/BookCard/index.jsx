@@ -21,7 +21,6 @@ const BookCard = ({book, addToCart, isInCart}) => {
         <Card key={id}>
             <Image src={image} wrapped ui={false}/>
             <Card.Content>
-
                 <Card.Header>{title}</Card.Header>
                 <Card.Meta>
                     <span className='date'>{author}</span>

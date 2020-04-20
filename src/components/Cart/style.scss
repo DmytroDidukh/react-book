@@ -45,3 +45,12 @@
     font-size: 16px;
   }
 }
+
+#checkout.ui.basic.green.button {
+  float: right;
+
+  &:hover {
+    color: white !important;
+    background: #21ba45 !important;
+  }
+}

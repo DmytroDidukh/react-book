@@ -5,7 +5,6 @@ import * as cartActions from '../actions/cart';
 import Cart from '../components/Cart'
 
 
-
 const mapStateToProps = ({cart: {items, isHidden}}) => {
     return {items, isHidden}
 };

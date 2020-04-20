@@ -18,7 +18,7 @@ code {
   margin-top: 30px !important;
   margin-bottom: 0;
 }
-.ui.menu:first-child > .item:first-child {
+.ui.menu:first-child > a .item:first-child {
   font-family: "Kalam", cursive;
 }
 
