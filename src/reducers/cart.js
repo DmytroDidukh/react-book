@@ -1,33 +1,40 @@
 const initialState = {
-    items: [
-        {
-            "id": 0,
-            "title": "To Kill a Mockingbird",
-            "author": "Harper Lee",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/220px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
-            "price": 25,
-            "rating": 5
-        },
-    ],
+    items: [],
     isHidden: false,
+    totalPrice: 0,
 };
 
 export default (state = initialState, action) => {
+    function reducer() {
+        return state.items.reduce((sum, {price, count = 1}) => sum + price * count, 0)
+    }
+
     switch (action.type) {
-        case 'ADD_TO_BOOK':
+        case 'ADD_TO_CART':
+            action.payload.count = 1;
+
             return {
                 ...state,
-                items: [...state.items, action.payload]
+                items: [...state.items, action.payload],
+                totalPrice: reducer() + action.payload.price
             };
         case 'REMOVE_FROM_CART':
             return {
                 ...state,
-                items: state.items.filter(book => book.id !== action.payload),
+                items: state.items.filter(book => book.id !== action.payload.id),
+                totalPrice: reducer() - action.payload.price * action.payload.count
             };
         case 'SHOW_HIDE_CART':
             return {
                 ...state,
                 isHidden: !action.payload
+            };
+        case 'TOTAL_PRICE':
+            state.items = state.items.map(book => book.id === action.payload.id ? action.payload : book);
+
+            return {
+                ...state,
+                totalPrice: reducer()
             };
         default:
             return state;

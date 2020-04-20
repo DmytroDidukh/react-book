@@ -1,0 +1,42 @@
+#description-modal {
+  .ui.image img {
+    max-width: 200px;
+  }
+
+  .description .ui.header {
+    span:nth-child(1) {
+      font-size: 12px;
+      color: #8e8e8e;
+      font-style: italic;
+    }
+    span:nth-child(2) {
+      font-size: 15px;
+      color: #5a5a5a;
+      font-style: italic;
+    }
+  }
+}
+
+
+#confirm {
+  .ui.button {
+    border: 1px solid #2ecc40;
+    background: none;
+    color: #2ecc40;
+    &:hover {
+      color: white;
+      background: #2ecc40;
+    }
+  }
+
+  .ui.primary.button {
+    background: none;
+    border: 1px solid  #ff695e;
+    color: #ff695e;
+
+    &:hover {
+      color: white;
+      background: #ff695e;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.ui.items.cart-popup {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  z-index: 10;
+  background: white;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  padding: 0 10px 10px;
+
+  > .item {
+    padding: 0 10px 10px 0;
+    border-bottom: 1px solid rgba(34, 36, 38, .1);
+    position: relative;
+    min-width: 150px;
+
+    .image img {
+      height: 100px;
+    }
+
+    .content {
+
+      i.trash {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        opacity: .3;
+
+        &:hover {
+          opacity: .8;
+          color: #db2828;
+        }
+      }
+    }
+  }
+
+  .remove.circle.icon {
+    position: absolute;
+    right: -12px;
+    top: -10px;
+    z-index: 20;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}

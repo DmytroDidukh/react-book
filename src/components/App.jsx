@@ -1,16 +1,13 @@
 import React, {useEffect} from 'react';
 import axios from 'axios'
-import {Container} from 'semantic-ui-react'
+import {Card, Container, Loader, Segment, Dimmer, Image} from 'semantic-ui-react'
 
-import SortPanel from '../containers/Sort'
-import HeaderMenu from '../containers/Menu'
-import { BooksPlate} from './index'
+import {BookCard, SortPanel, HeaderMenu} from '../containers'
 
 import 'semantic-ui-css/semantic.min.css'
 
 
-function App({books, setBooks, isReady, addToCart}) {
-    console.log(addToCart)
+function App({books, setBooks, isReady}) {
 
     useEffect(() => {
         axios.get('http://localhost:3001/books').then(({data}) => {
@@ -23,11 +20,19 @@ function App({books, setBooks, isReady, addToCart}) {
         <Container>
             <HeaderMenu/>
             <SortPanel/>
-            <BooksPlate
-                books={books}
-                isReady={isReady}
-                addToCart={addToCart}
-            />
+            <Card.Group itemsPerRow={5}>
+                {!isReady ?
+                    <Segment>
+                        <Dimmer active inverted>
+                            <Loader inverted>Loading</Loader>
+                        </Dimmer>
+                    </Segment>
+                    :
+                    books.map(book => (
+                        <BookCard key={book.id} book={book}/>
+                    ))
+                }
+            </Card.Group>
         </Container>
     );
 }

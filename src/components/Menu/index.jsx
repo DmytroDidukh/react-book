@@ -1,7 +1,7 @@
 import React from "react";
 import {Menu, Icon, Label} from 'semantic-ui-react'
 
-import Cart from '../../containers/Cart'
+import {Cart} from '../../containers'
 
 
 const HeaderMenu = ({items: booksInCart, onCartClick, isHidden, totalPrice}) => {

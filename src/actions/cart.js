@@ -1,6 +1,6 @@
 export const addToCart = (book) => {
     return {
-        type: 'ADD_TO_BOOK',
+        type: 'ADD_TO_CART',
         payload: book
     }
 };
@@ -18,3 +18,11 @@ export const onCartClick = (boolean) => {
         payload: boolean
     }
 };
+
+export const changeTotalPrice = (book) => {
+    return {
+        type: 'TOTAL_PRICE',
+        payload: book
+    }
+};
+

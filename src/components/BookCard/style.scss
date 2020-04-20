@@ -1,0 +1,66 @@
+.cards {
+  .ui.card {
+    img {
+      height: 250px !important;
+    }
+
+    .header {
+      font-size: 1.1em !important;
+    }
+
+    .content {
+      padding-bottom: 0;
+
+      .meta {
+        font-size: .9em !important;
+      }
+    }
+
+    .ui.rating {
+      text-align: center;
+      display: block;
+      margin: 5px;
+
+      * {
+        color: darkred;
+      }
+    }
+
+    .ui.button {
+      width: 101%;
+      background: #db2828;
+      border-radius: 0;
+      color: white;
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        color: #fff;
+        background: darken(#db2828, 5%);
+      }
+
+      .dollar.icon {
+        margin: 0;
+      }
+
+      .shop.icon {
+        margin-left: 10px;
+      }
+
+    }
+  }
+}
+
+#book-description {
+  position: absolute;
+  right: 0px;
+  width: fit-content;
+  padding: 3px;
+  font-size: 9px;
+  opacity: .5;
+  border-radius: 2px;
+  background: #777777;
+
+  &:hover {
+    opacity: 8;
+  }
+}

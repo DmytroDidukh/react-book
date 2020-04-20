@@ -2,15 +2,12 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 
 import * as cartActions from '../actions/cart';
-import HeaderMenu from '../components/Menu'
+import BookCard from '../components/BookCard';
 
 
-
-const mapStateToProps = ({cart: {items, isHidden, totalPrice}}) => {
+const mapStateToProps = ({cart: {items}}, {book: {id}}) => {
     return {
-        items,
-        isHidden,
-        totalPrice
+        isInCart: items.find( book => book.id === id)
     }
 };
 
@@ -20,4 +17,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderMenu);
+export default connect(mapStateToProps, mapDispatchToProps)(BookCard);
