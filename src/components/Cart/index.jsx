@@ -82,7 +82,9 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
             }
             {booksInCart.length ?
                 <Link to={"/checkout"}>
-                    <Button id={"checkout"} basic color='green'>checkout</Button>
+                    <Button
+                        id={"checkout"} basic color='green'
+                        onClick={() => onCartClick(isHidden)}>checkout</Button>
                 </Link>
                 : ''}
         </Item.Group>

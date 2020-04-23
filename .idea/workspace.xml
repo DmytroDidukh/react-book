@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5847d3-e321-4d76-99dd-e652fae61036" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Checkout/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Modal/ConfirmModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Hero/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Shop/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BookCard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookCard/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkout/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Studing/EPAM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding\JS\react-book\src\pages" />
       <recent name="D:\Coding\JS\react-book\src\containers" />
       <recent name="D:\Coding\JS\react-book\src\components" />
       <recent name="D:\Coding\JS\react-book\public" />
@@ -110,7 +108,13 @@
       <workItem from="1587068117377" duration="422000" />
       <workItem from="1587071005552" duration="3410000" />
       <workItem from="1587281276510" duration="21902000" />
-      <workItem from="1587372693766" duration="28688000" />
+      <workItem from="1587372693766" duration="28777000" />
+      <workItem from="1587452970103" duration="32000" />
+      <workItem from="1587455379238" duration="6928000" />
+      <workItem from="1587478978844" duration="808000" />
+      <workItem from="1587499804759" duration="2504000" />
+      <workItem from="1587508224088" duration="20000" />
+      <workItem from="1587647878518" duration="4159000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1586858780729</created>
@@ -161,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587389640029</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="router">
+      <created>1587413006556</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587413006556</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +207,7 @@
     <MESSAGE value="sort" />
     <MESSAGE value="cart" />
     <MESSAGE value="books description, remove books, modals" />
-    <option name="LAST_COMMIT_MESSAGE" value="books description, remove books, modals" />
+    <MESSAGE value="router" />
+    <option name="LAST_COMMIT_MESSAGE" value="router" />
   </component>
 </project>

@@ -9,6 +9,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#home {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://wallpaperset.com/w/full/8/e/a/359256.jpg") no-repeat center;
+  background-size: cover;
+}
+#home:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #979797;
+  opacity: 0.3;
+  z-index: 0;
+}
+#home > * {
+  color: white;
+  z-index: 10;
+}
+#home .huge {
+  font-family: "Kalam", cursive;
+  font-size: 80px;
+}
+#home .tiny {
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#home button {
+  font-weight: 600;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  border: 2px solid #db2828;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #db2828;
+}
+#home button:hover {
+  background: #d01919;
+  color: white;
+  border: 2px solid #d00a0a;
+}
+
 .ui.menu {
   position: relative;
 }
@@ -44,6 +93,11 @@ code {
   height: 100px;
   border: none;
   box-shadow: none;
+}
+
+.ui.steps {
+  display: flex;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 1200px) {

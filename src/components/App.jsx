@@ -1,15 +1,13 @@
 import React, {useEffect} from 'react';
 import axios from 'axios';
-import {Switch, Route, Link} from "react-router-dom";
-import {Card, Container, Loader, Segment, Dimmer} from 'semantic-ui-react'
+import {Switch, Route} from "react-router-dom";
 
-import {BookCard, SortPanel, HeaderMenu} from '../containers'
-import Checkout from './Checkout'
+import {Hero, Shop, Ordering} from '../pages';
 
 import 'semantic-ui-css/semantic.min.css'
 
 
-function App({books, setBooks, isReady}) {
+const App = ({books, setBooks, isReady}) => {
 
     useEffect(() => {
         axios.get('http://localhost:3001/books').then(({data}) => {
@@ -19,34 +17,18 @@ function App({books, setBooks, isReady}) {
 
 
     return (
-        <Container>
-            <HeaderMenu/>
-            <Switch>
-                <Route path={"/shop"} exact>
-                    <SortPanel/>
-                    <Card.Group itemsPerRow={5}>
-                        {!isReady ?
-                            <Segment>
-                                <Dimmer active inverted>
-                                    <Loader inverted>Loading</Loader>
-                                </Dimmer>
-                            </Segment>
-                            :
-                            books.map(book => (
-                                <BookCard key={book.id} book={book}/>
-                            ))
-                        }
-                    </Card.Group>
-                </Route>
-                <Route path={"/checkout"}>
-                    <Checkout/>
-                </Route>
-            </Switch>
-
-
-        </Container>
+        <Switch>
+            <Route exact path={"/"}>
+                <Hero/>
+            </Route>
+            <Route path={"/shop"} exact>
+                <Shop isReady={isReady} books={books}/>
+            </Route>
+            <Route path={"/checkout"}>
+                <Ordering/>
+            </Route>
+        </Switch>
     );
-}
-
+};
 
 export default App;
