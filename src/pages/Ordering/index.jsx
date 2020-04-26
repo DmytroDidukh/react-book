@@ -51,14 +51,13 @@ const Ordering = ({user, items: booksInCart, totalPrice, setDeliveryField, setPa
                         <Button disabled={!booksInCart.length} id={"next"}
                                 className={"ui green basic button"}>
                             <Link className={'button-link'} to={"/checkout/thanks-window"}
-                                  onClick={() =>{toThanks(); clearCart()}}>Confirm
+                                  onClick={() =>{localStorage.clear(); toThanks(); clearCart()}}>Confirm
                             </Link>
                         </Button>
                     </div>
                 </Route>
 
                 <Route path={'/checkout/thanks-window'}>
-                    {localStorage.clear()}
                     <div id={'thanks'}>
                         <Header size='huge'>Thanks for choosing us!</Header>
                         <Link to={"/shop"}>

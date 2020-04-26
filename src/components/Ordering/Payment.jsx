@@ -22,7 +22,7 @@ const Payment = ({user: {payment}, setUserField}) => {
     return (
         <div className={"forms"}>
             <Form onChange={(e) => createUserField(e)}>
-            <Form.Group unstackable widths={2}>
+            <Form.Group widths={2}>
                 <Form.Input required label='Card number' placeholder='Card number' name={'card'} value={card}/>
                 <Form.Input required label='Card owner' placeholder='Card owner' name={'cardOwner'} value={cardOwner}/>
             </Form.Group>

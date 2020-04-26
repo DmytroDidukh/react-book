@@ -23,7 +23,7 @@ const Delivery = ({user: {delivery}, setUserField}) => {
     return (
         <div className={'forms'}>
             <Form onChange={(e) => createUserField(e)}>
-            <Form.Group unstackable widths={3}>
+            <Form.Group widths={3}>
                 <Form.Input required label='First name' placeholder='First name' name={'name'} value={name}/>
                 <Form.Input required label='Last name' placeholder='Last name' name={'surname'} value={surname}/>
                 <Form.Input required label='Email' placeholder='Email' name={'email'} value={email}/>

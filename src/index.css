@@ -124,5 +124,14 @@ code {
     height: 260px !important;
   }
 }
+@media only screen and (max-width: 767px) {
+  .ui.steps:not(.unstackable) {
+    display: flex;
+    overflow: visible;
+  }
+  .ui.steps:not(.unstackable) > div {
+    flex: 1 1 calc(100% / 3);
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

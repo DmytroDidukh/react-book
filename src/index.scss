@@ -155,3 +155,15 @@ code {
   }
 }
 
+@media only screen and (max-width: 767px) {
+
+ .ui.steps:not(.unstackable) {
+   display: flex;
+   overflow: visible;
+
+   > div {
+     flex: 1 1 calc(100% / 3);
+   }
+ }
+
+}
