@@ -1,4 +1,4 @@
-###How to start:
+### `How to start:`
 
 ## `npm install`
 ## `npm install -g json-server`
