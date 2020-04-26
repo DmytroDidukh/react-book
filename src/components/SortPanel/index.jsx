@@ -3,7 +3,6 @@ import {Input, Menu} from 'semantic-ui-react'
 
 const SortPanel = ({sort, sortBy, searchQuery}) => {
 
-
     return (
         <Menu secondary>
             <Menu.Item

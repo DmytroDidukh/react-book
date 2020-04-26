@@ -26,3 +26,10 @@ export const changeTotalPrice = (book) => {
     }
 };
 
+export const clearCart = () => {
+    return {
+        type: 'CLEAR_CART'
+    }
+};
+
+

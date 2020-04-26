@@ -53,4 +53,8 @@
     color: white !important;
     background: #21ba45 !important;
   }
+
+  &:disabled {
+    border: 3px solid red;
+  }
 }

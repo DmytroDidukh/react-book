@@ -81,7 +81,7 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
                         </Message>)
             }
             {booksInCart.length ?
-                <Link to={"/checkout"}>
+                <Link to={"/checkout/shipping"}>
                     <Button
                         id={"checkout"} basic color='green'
                         onClick={() => onCartClick(isHidden)}>checkout</Button>

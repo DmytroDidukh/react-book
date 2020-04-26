@@ -1,12 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import {Confirm} from 'semantic-ui-react';
 
 
 const ConfirmModal = ({book, removeFromCart, setShowConfirm, isShowConfirm}) => {
 
-
     function confirmedDelete(book) {
-        console.log(book.id)
         removeFromCart(book);
         setShowConfirm(false)
     }

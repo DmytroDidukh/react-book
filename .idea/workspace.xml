@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea5847d3-e321-4d76-99dd-e652fae61036" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Hero/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Shop/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/orderSteps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ordering/Confirm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ordering/Delivery.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ordering/Payment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Ordering/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/OrderSteps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Ordering.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/orderSteps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Checkout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordering/OrderSteps.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/ConfirmModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/ConfirmModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SortPanel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortPanel/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -114,7 +127,8 @@
       <workItem from="1587478978844" duration="808000" />
       <workItem from="1587499804759" duration="2504000" />
       <workItem from="1587508224088" duration="20000" />
-      <workItem from="1587647878518" duration="4159000" />
+      <workItem from="1587647878518" duration="4632000" />
+      <workItem from="1587901906971" duration="31881000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1586858780729</created>
@@ -172,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587413006556</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor">
+      <created>1587652717403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587652717403</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +229,7 @@
     <MESSAGE value="cart" />
     <MESSAGE value="books description, remove books, modals" />
     <MESSAGE value="router" />
-    <option name="LAST_COMMIT_MESSAGE" value="router" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>

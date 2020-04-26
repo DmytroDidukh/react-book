@@ -2,7 +2,8 @@ import React, {useEffect} from 'react';
 import axios from 'axios';
 import {Switch, Route} from "react-router-dom";
 
-import {Hero, Shop, Ordering} from '../pages';
+import {Hero, Shop} from '../pages';
+import Ordering from '../containers/Ordering'
 
 import 'semantic-ui-css/semantic.min.css'
 

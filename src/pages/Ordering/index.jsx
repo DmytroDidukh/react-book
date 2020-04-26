@@ -1,35 +1,72 @@
 import React from "react";
 import {Switch, Route, Link} from "react-router-dom";
-import {Button, Form, Container} from "semantic-ui-react";
+import {Button, Container, Header} from "semantic-ui-react";
 
-import {HeaderMenu} from "../../containers";
-import Checkout from "../../components/Checkout";
+import {HeaderMenu, OrderSteps} from "../../containers";
 
-const Ordering = () => {
+import Delivery from "../../components/Ordering/Delivery";
+import Payment from "../../components/Ordering/Payment";
+import Confirm from "../../components/Ordering/Confirm";
+
+import '../../components/Ordering/styles.scss'
+
+
+const Ordering = ({user, items: booksInCart, totalPrice, setDeliveryField, setPaymentField, clearCart,
+                      isDeliveryFormComplete, isPaymentFormComplete, toPayment, toConfirm, toThanks}) => {
 
     return (
         <Container>
             <HeaderMenu/>
-            <Checkout/>
-            <Form>
-                <Form.Input
-                    error={false}
-                    fluid
-                    label='First name'
-                    placeholder='First name'
-                    id='form-input-first-name'
-                />
-                <Form.Input
-                    error={false}
-                    fluid
-                    label='Last name'
-                    placeholder='Last name'
-                />
-                <Link to={"/next"}>
-                    <Button id={"checkout"} className={"ui green basic button"}>Next</Button>
-                </Link>
-            </Form>
+            <OrderSteps/>
+            <Switch>
+                <Route path={"/checkout/shipping"}>
+                    <Delivery user={user} setUserField={setDeliveryField}/>
+                    <div className={"form-buttons"}>
+                        <Button id={"next"} disabled={!isDeliveryFormComplete}
+                                className={"ui green basic button"}>
+                            <Link className={'button-link'} to={"/checkout/payment"} onClick={toPayment}>Next</Link>
+                        </Button>
+                    </div>
+                </Route>
 
+                <Route path={'/checkout/payment'}>
+                    <Payment user={user} setUserField={setPaymentField}/>
+                    <div className={"form-buttons"}>
+                        <Button id={"back"} className={"ui red basic button"}>
+                            <Link className={'button-link'} to={"/checkout/shipping"}>Back </Link>
+                        </Button>
+                        <Button id={"next"} disabled={!isPaymentFormComplete}
+                                className={"ui green basic button"}>
+                            <Link className={'button-link'} to={"/checkout/confirm"} onClick={toConfirm}>Next</Link>
+                        </Button>
+                    </div>
+                </Route>
+
+                <Route path={'/checkout/confirm'}>
+                    <Confirm user={user} booksInCart={booksInCart} totalPrice={totalPrice}/>
+                    <div className={"form-buttons"}>
+                        <Button id={"back"} className={"ui red basic button"}>
+                            <Link className={'button-link'} to={"/checkout/payment"}>Back </Link>
+                        </Button>
+                        <Button disabled={!booksInCart.length} id={"next"}
+                                className={"ui green basic button"}>
+                            <Link className={'button-link'} to={"/checkout/thanks-window"}
+                                  onClick={() =>{toThanks(); clearCart()}}>Confirm
+                            </Link>
+                        </Button>
+                    </div>
+                </Route>
+
+                <Route path={'/checkout/thanks-window'}>
+                    {localStorage.clear()}
+                    <div id={'thanks'}>
+                        <Header size='huge'>Thanks for choosing us!</Header>
+                        <Link to={"/shop"}>
+                            <button >go back to shop</button>
+                        </Link>
+                    </div>
+                </Route>
+            </Switch>
         </Container>
     )
 };
