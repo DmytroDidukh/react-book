@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import {Switch, Route, Link} from "react-router-dom";
-import {Item, Icon, Message, Button, Confirm} from 'semantic-ui-react';
+import React from "react";
+import {Link} from "react-router-dom";
+import {Item, Icon, Message, Button} from 'semantic-ui-react';
 import {InputNumber} from 'antd';
 
 
@@ -9,8 +9,6 @@ import './style.scss'
 
 
 const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, changeTotalPrice}) => {
-    //const [isShowConfirm, setShowConfirm] = useState(false);
-
 
     function onChange(value, book) {
         book.count = value;
@@ -23,26 +21,9 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
         }
     }
 
-    /* Bug with loosing current book
-    function onChange(value, book) {
-        book.count = value;
-        changeTotalPrice(book)
+    function cartToLocal(cartBooks) {
+        localStorage.setItem('localCartBooks', JSON.stringify(cartBooks))
     }
-
-    function showDeleteConfirm(book) {
-          removeFromCart(book);
-        setShowConfirm(true)
-    }
-
-      function confirmedDelete(book) {
-           removeFromCart(book);
-           setShowConfirm(false)
-       }
-
-       function canceledDelete() {
-           setShowConfirm(false)
-       }*/
-
 
     return (
         <Item.Group className={'cart-popup'}>
@@ -62,14 +43,6 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
                                     </Item.Extra>
                                     <Icon name='trash alternate outline'
                                           onClick={() => showDeleteConfirm(book)}/>
-                                    {/*<Icon name='trash alternate outline'
-                                          onClick={showDeleteConfirm}/>
-                                     <Confirm id={"confirm"}
-                                             open={isShowConfirm}
-                                             header={book.title}
-                                             onCancel={canceledDelete}
-                                             onConfirm={() => confirmedDelete(book)}
-                                    />*/}
                                 </Item.Content>
                                 <InputNumber min={1} max={10} defaultValue={book.count}
                                              onChange={(v) => onChange(v, book)}/>
@@ -84,7 +57,7 @@ const Cart = ({items: booksInCart, isHidden, onCartClick, removeFromCart, change
                 <Link to={"/checkout/shipping"}>
                     <Button
                         id={"checkout"} basic color='green'
-                        onClick={() => onCartClick(isHidden)}>checkout</Button>
+                        onClick={() => {onCartClick(isHidden); cartToLocal(booksInCart)}}>checkout</Button>
                 </Link>
                 : ''}
         </Item.Group>

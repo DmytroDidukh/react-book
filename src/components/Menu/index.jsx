@@ -1,11 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Menu, Icon, Label} from 'semantic-ui-react'
 import {Link} from 'react-router-dom'
 
 import {Cart} from '../../containers'
 
 
-const HeaderMenu = ({items: booksInCart, onCartClick, isHidden, totalPrice}) => {
+const HeaderMenu = ({items: booksInCart, onCartClick, isHidden, totalPrice, setCart}) => {
+
+    useEffect(() => {
+        const localCart = JSON.parse(localStorage.getItem('localCartBooks'));
+
+        if (localCart) {
+            setCart()
+        }
+    }, []);
+
 
     return (
         <Menu>

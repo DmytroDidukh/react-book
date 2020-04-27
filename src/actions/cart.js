@@ -32,4 +32,10 @@ export const clearCart = () => {
     }
 };
 
+export const setCart = () => {
+    return {
+        type: 'SET_CART'
+    }
+};
+
 

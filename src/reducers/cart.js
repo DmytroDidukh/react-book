@@ -40,6 +40,9 @@ export default (state = initialState, action) => {
                 totalPrice: reducer() + action.payload.price
             };
         case 'REMOVE_FROM_CART':
+            let localCart = JSON.parse(localStorage.getItem('localCartBooks')).filter(book => book.id !== action.payload.id);
+            localStorage.setItem('localCartBooks', JSON.stringify(localCart));
+
             return {
                 ...state,
                 items: state.items.filter(book => book.id !== action.payload.id),
@@ -50,6 +53,13 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 items: [],
+                totalPrice: reducer()
+            };
+        case 'SET_CART':
+
+            return {
+                ...state,
+                items: JSON.parse(localStorage.getItem('localCartBooks')),
                 totalPrice: reducer()
             };
         case 'SHOW_HIDE_CART':

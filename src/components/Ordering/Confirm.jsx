@@ -40,8 +40,8 @@ const Confirm = ({user: {delivery}, booksInCart, totalPrice}) => {
                             ))}
                             <Table.Row>
                                 <Table.Cell></Table.Cell>
-                                <Table.Cell><b>Total price:</b></Table.Cell>
-                                <Table.Cell><b>${totalPrice}</b></Table.Cell>
+                                <Table.Cell><b><i>Total count: ${booksInCart.reduce( (sum, {count}) => sum + count, 0)}</i></b></Table.Cell>
+                                <Table.Cell><b><i>Total price: ${totalPrice}</i></b></Table.Cell>
                             </Table.Row>
 
                         </Table.Body>
