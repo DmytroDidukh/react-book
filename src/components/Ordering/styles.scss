@@ -1,6 +1,7 @@
 .form-buttons {
+  margin: 0 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   button {
     padding: 0 !important;
@@ -41,6 +42,10 @@
 
 .forms {
   margin: 50px;
+
+  .ui.negative.message {
+    text-align: center;
+  }
 
   .ui[class*="very basic"].table {
     margin-bottom: 30px;

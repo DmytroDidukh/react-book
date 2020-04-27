@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ea5847d3-e321-4d76-99dd-e652fae61036" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ordering/Delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordering/Delivery.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Ordering/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordering/Payment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ordering/Confirm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordering/Confirm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ordering/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ordering/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Ordering/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +108,8 @@
       <workItem from="1587499804759" duration="2504000" />
       <workItem from="1587508224088" duration="20000" />
       <workItem from="1587647878518" duration="4632000" />
-      <workItem from="1587901906971" duration="32547000" />
+      <workItem from="1587901906971" duration="33364000" />
+      <workItem from="1587978914327" duration="855000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1586858780729</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587941640814</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="debugging">
+      <created>1587942392211</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587942392211</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +226,7 @@
     <MESSAGE value="router" />
     <MESSAGE value="refactor" />
     <MESSAGE value="ordering options" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordering options" />
+    <MESSAGE value="debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging" />
   </component>
 </project>

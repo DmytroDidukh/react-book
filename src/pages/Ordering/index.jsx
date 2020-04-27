@@ -22,6 +22,9 @@ const Ordering = ({user, items: booksInCart, totalPrice, setDeliveryField, setPa
                 <Route path={"/checkout/shipping"}>
                     <Delivery user={user} setUserField={setDeliveryField}/>
                     <div className={"form-buttons"}>
+                        <Button id={"back"} className={"ui red basic button"}>
+                            <Link className={'button-link'} to={"/shop"}>Back to shop</Link>
+                        </Button>
                         <Button id={"next"} disabled={!isDeliveryFormComplete}
                                 className={"ui green basic button"}>
                             <Link className={'button-link'} to={"/checkout/payment"} onClick={toPayment}>Next</Link>
